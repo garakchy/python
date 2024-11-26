@@ -7,9 +7,11 @@ def window():
     win = QMainWindow()
     win.setGeometry(200, 200, 300, 300)
     win.setWindowTitle("Tech with Tim GUI")
+    
     label = QtWidgets.QLabel(win)
     label.setText("Hello World")
     label.move(110, 100)
+    
     win.show()
     sys.exit(app.exec_())
 

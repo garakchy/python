@@ -14,3 +14,12 @@ veri = pd.DataFrame({
 mydata = veri[["takim", "madalya_Gold", "madalya_Silver", "madalya_Bronze"]].groupby(["takim"]).sum().sort_values(by="madalya_Gold", ascending=False)
               
 print(mydata.head(10))
+
+import seaborn as sns
+
+def boy_kilo_sacilim():
+    sns.scatterplot(data=veri, x="boy", y="kilo", hue="madalya", alpha=0.3)
+    plt.title("boy-kilo dağilimi")
+    plt.show()
+
+boy_kilo_sacilim()

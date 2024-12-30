@@ -1,4 +1,5 @@
 import turtle
+import random
 
 turtle.screensize(800, 600)
 

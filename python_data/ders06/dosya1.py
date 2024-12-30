@@ -1,5 +1,6 @@
 # gülen yüz çizen program
 import turtle
+import random
 
 turtle.screensize(800, 600)
 turtle.speed(0)

@@ -29,8 +29,23 @@ def ucgen():
     turtle.penup()
 
 def yazi():
+    turtle.pendown()
     yaziFontu = ("Arial", 20, "bold")
-    turtle.write("YAZI", font=yaziFontu)
+    turtle.write(bilgi, font=yaziFontu)
+    turtle.penup() 
+
+def mesaj():
+    bilgi = turtle.textinput("Mesaj", "Bir mesaj yazın")
+    print(bilgi)
+    if bilgi == "quit" : quit()
+    else: yazi(bilgi)
+
+def uygulama():
+    # turtle.onscreenclick(fun, btn) : mouse tıklannmasıyla x, y koordinatları alınır
+    # btn, üç özelliği var (1, 2, 3) : 1 = sol, 2 = orta, 3 = sağ
+    turtle.onscreenclick(ucgen, btn=1)
+
+    turtle.listen()
 
 kareciz()
 turtle.mainloop() # ekranı açık tut

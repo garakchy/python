@@ -21,5 +21,16 @@ def ucgen():
     turtle.pendown()
     turtle.begin_fill()
 
+    for kenar in range(3):
+        turtle.forward(100)
+        turtle.right(120)
+    
+    turtle.end_fill()
+    turtle.penup()
+
+def yazi():
+    yaziFontu = ("Arial", 20, "bold")
+    turtle.write("YAZI", font=yaziFontu)
+
 kareciz()
 turtle.mainloop() # ekranı açık tut

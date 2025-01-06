@@ -9,4 +9,10 @@ x, y = 800, 600
 resim1 = cv2.imread("./resim1.jpg")
 # resmin gir tonlu olması daha az pikseli kapsadığı için gri tonlu yapılır
 # görserli okuma işleminde blue, green, red değerleri okunur
+print(resim1.shape) # y, x, boyut(ndim)
 gri_resim = cv2.cvtColor(resim1, cv2.COLOR_BGR2GRAY)
+
+cv2.imshow("Gri Resim", gri_resim)
+
+if cv2.waitKey(0) & 0xFF == ord("q"):
+    cv2.destroyAllWindows()

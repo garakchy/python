@@ -1,5 +1,4 @@
 # dışarıdan girilen değere göre resim dosyasını boyutlandırma
-import numpy as np
 import cv2
 genislik = int(input("Genişlik değeri giriniz: "))
 yukseklik = int(input("Yükseklik değeri giriniz: "))

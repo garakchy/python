@@ -22,4 +22,5 @@ def fontislemi():
 kontrol True
 while kontrol: 
     pencere.fill("dodgerblue")
-    pygame.draw.rect(pencere, (200, 200, 200), (100, 100, 800, 600))
+    pygame.draw.rect(pencere, (200, 200, 200), (100, 100, 800, 600), 5, border_radius=20)
+    

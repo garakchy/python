@@ -23,7 +23,7 @@ def fontislemi():
     font_koor = font.get_rect()
     font_koor.topleft = (400, 300)
 
-kontrol True
+kontrol = True
 while kontrol: 
     pencere.fill("dodgerblue")
     pygame.draw.rect(pencere, (200, 200, 200), (100, 100, 800, 600), 5, border_radius=20)

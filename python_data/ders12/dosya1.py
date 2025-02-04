@@ -13,6 +13,10 @@ karakter_bilgi.topleft = (120, 120)
 
 pygame.draw.rect(pencere, (200, 200, 200), (100, 100, 800, 600), 5, border_radius=20)
 
+def zemin_ses():
+    pygame.mixer.music.load("./sesler/oyun_arka_plan.wav")
+    pygame.mixer.music.play(-1, 0, 0)
+
 def fontislemi():
     sistemfontu = pygame.font.SysFont("Arial", 24, bold=True, italic=True)
     font = sistemfontu.render("pygame modülü", True, (255, 0, 0), (255, 255, 0))
@@ -23,4 +27,3 @@ kontrol True
 while kontrol: 
     pencere.fill("dodgerblue")
     pygame.draw.rect(pencere, (200, 200, 200), (100, 100, 800, 600), 5, border_radius=20)
-    
